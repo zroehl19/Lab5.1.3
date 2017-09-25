@@ -23,7 +23,17 @@ int main() {
     string sentence;
     getline(cin, sentence);
     
-    
+    for (int i = 0; i < sentence.length();)
+    {
+        if(sentence.at(i) == ' ' && sentence.at((i)-1) == ' ')
+        {
+            sentence.erase(i,1);
+        }
+        else
+        {
+            i++;
+        }
+    }
     
     cout << sentence << "\n";
 }
