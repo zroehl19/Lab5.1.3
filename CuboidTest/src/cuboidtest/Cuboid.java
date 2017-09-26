@@ -49,7 +49,7 @@ public class Cuboid {
 
     @Override
     public String toString() {
-        return "Cuboid: length =" + length + " width = " + width + " height = " + height;
+        return "Cuboid: length = " + length + " width = " + width + " height = " + height;
     }
     
     public int Volume()
