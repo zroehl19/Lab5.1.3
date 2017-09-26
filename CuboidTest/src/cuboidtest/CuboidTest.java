@@ -33,6 +33,12 @@ public class CuboidTest {
         c1.setLength(3);
         c1.setWidth(5);
         c1.setHeight(4);
+        
+        c1.toString();
+        c2.toString();
+        
+        System.out.println(c1.Volume());
+        System.out.println(c2.Volume());
     }
     
 }
