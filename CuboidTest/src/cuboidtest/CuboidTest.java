@@ -27,18 +27,25 @@ public class CuboidTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Cuboid c1 = new Cuboid();
-        Cuboid c2 = new Cuboid(3,4,5);
+        Cuboid<Integer> c1 = new Cuboid<>();
+        Cuboid<Integer> c2 = new Cuboid<>(3,4,5);
         
         c1.setLength(3);
         c1.setWidth(5);
         c1.setHeight(4);
         
+        c1.getLength();
+        c2.getLength();
+        c1.getWidth();
+        c2.getWidth();
+        c1.getHeight();
+        c2.getHeight();
+        
         System.out.println(c1.toString());
         System.out.println(c2.toString());
         
-        System.out.println(c1.Volume());
-        System.out.println(c2.Volume());
+        System.out.println("Volume = " + c1.Volume());
+        System.out.println("Volume = " + c2.Volume());
     }
     
 }
