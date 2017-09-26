@@ -54,6 +54,7 @@ public class Cuboid {
     
     public int Volume()
     {
-        
+        int volume = length*width*height;
+        return volume;
     }
 }

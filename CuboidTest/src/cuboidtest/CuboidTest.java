@@ -27,8 +27,12 @@ public class CuboidTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //Add code here to fully test your Cuboid Class.
-        //Be sure to test all constructors and methods.
+        Cuboid c1 = new Cuboid();
+        Cuboid c2 = new Cuboid(3,4,5);
+        
+        c1.setLength(3);
+        c1.setWidth(5);
+        c1.setHeight(4);
     }
     
 }
